@@ -1,6 +1,8 @@
 package by.itstep.elena.megachopproject.model.entity;
 
 public class Orange {
+
+
     private int diameter; //поля (состояние)
     private int vitaminC;
     String name;
@@ -10,7 +12,7 @@ public class Orange {
     }
 
     public Orange(int diameter, int vitaminC, double price) { //конструктор с параметрами, инициализировать состояние объекта
-        super(price);
+        //super(price);
         this.diameter = diameter;
         this.vitaminC = vitaminC;
     }
@@ -38,7 +40,14 @@ public class Orange {
         this.name = name;
     }
 
-
+    @Override                          //для предоставления ясной и достаточной информации об объекте (Object)
+    public String toString() {         //toString() — в Java метод преобразует и возвращает строку
+        return "Orange{" +
+                "diameter=" + diameter +
+                ", vitaminC=" + vitaminC +
+                ", name='" + name + '\'' +
+                '}';
+    }
 
 
 
