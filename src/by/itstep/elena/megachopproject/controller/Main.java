@@ -8,6 +8,13 @@ public class Main {
         Orange orange = new Orange(200, 3000, 3600);
         Milk milk = new Milk(100, 20, 369);
         System.out.println(milk);
-    }
 
+        // тест метода append
+        //  StringBuffer sb = new StringBuffer("Тест");
+        //    sb.append(" StringBuffer");
+        //   System.out.println(sb);
+    }
 }
+
+
+
