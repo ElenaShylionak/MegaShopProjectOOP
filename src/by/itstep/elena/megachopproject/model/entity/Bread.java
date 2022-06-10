@@ -1,16 +1,18 @@
 package by.itstep.elena.megachopproject.model.entity;
 
-public class Bread {
+import by.itstep.elena.megachopproject.model.entity.abstracts.Product;
+
+public class Bread extends Product {
 
 
     private String color;
     private String flour;
 
-    public Bread() {
+    public Bread () {
     }
 
     public Bread(String color, String flour, double price) {
-        //super(price); // this();
+        super(price); // this(); или
         this.color = color;
         this.flour = flour;
     }
